@@ -35,6 +35,7 @@ class StockDataEntry:
 
 class DataLoader:
         stock_data = dict()
+
         def LoadIndividualStockData(self, stock_data_file_name):
             with open(stock_data_file_name, 'rb') as stock_file_data:
                 csv_reader = csv.reader(stock_file_data)
